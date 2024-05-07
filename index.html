@@ -44,7 +44,6 @@
 
     <header>
         <h1>Organización para la Conservación del Medio Ambiente</h1>
-        <!-- Otros elementos de la cabecera aquí -->
         <nav>
             <a href="#quienes-somos">Quiénes Somos</a>
             <a href="#actividades-realizadas">Actividades Realizadas</a>
@@ -52,7 +51,10 @@
             <a href="#videos-relacionados">Videos Relacionados</a>
             <a href="https://es.wikipedia.org/wiki/Medio_ambiente" target="_blank">Wikipedia</a>
         </nav>
+        <audio id="podcast-audio" src="audio/audio mp3.mp3" preload="auto"></audio>
+        <button id="playpause-button" onclick="toggleAudio()">Reproducir Podcast</button>
     </header>
+    
 
     <main>
         <!-- Contenido principal de la página -->
@@ -105,7 +107,7 @@
             <div class="video-container">
                 <iframe width="560" height="315" src="video/cambio climatico 2.mp4" frameborder="0" allowfullscreen></iframe>
                 <iframe width="560" height="315" src="video/cambio climatico 3.mp4" frameborder="0" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="video/cambio climatico 4.mp4" frameborder="0" allowfullscreen></iframe>
+            
                 <!-- Agrega más iframes de vídeos aquí -->
             </div>
         </section>
@@ -200,7 +202,21 @@
             <a href="https://www.instagram.com/TuPagina" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-
+    <script> 
+    function toggleAudio() {
+        var audio = document.getElementById('podcast-audio');
+        var button = document.getElementById('playpause-button');
+    
+        if (audio.paused) {
+            audio.play();
+            button.textContent = 'Pausar Podcast';
+        } else {
+            audio.pause();
+            button.textContent = 'Reproducir Podcast';
+        }
+    }</script>
+   
+    
     <!-- JavaScript para mostrar/ocultar el formulario de registro -->
     <script>
         document.getElementById('mostrar-formulario-registro').addEventListener('click', function() {
@@ -213,5 +229,3 @@
         });
     </script>
 
-</body>
-</html>
