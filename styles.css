@@ -1,0 +1,105 @@
+/* Estilos para la cabecera */
+header {
+    background-color: green; /* Color de fondo de la cabecera */
+    padding: 20px; /* Espaciado interno */
+    border-bottom: 2px solid #2980b9; /* Borde inferior */
+}
+
+/* Estilos para el contenido principal */
+main {
+    background-color: #ecf0f1; /* Color de fondo del contenido principal */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Márgenes superior e inferior */
+    border: 1px solid #bdc3c7; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: green; /* Color de fondo del pie de página */
+    color: #ffffff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    border-top: 2px solid #34495e; /* Borde superior */
+}
+/* Estilos para encabezados y párrafos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif; /* Cambia la fuente */
+}
+
+p {
+    font-family: Arial, sans-serif; /* Cambia la fuente */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos para la lista de actividades realizadas */
+.activity-list {
+    list-style-type: disc; /* Estilo de viñetas */
+    font-family: Arial, sans-serif; /* Cambia la fuente */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-left: 20px; /* Espacio a la izquierda */
+}
+
+/* Estilos para la tabla de próximos eventos */
+.event-table {
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    width: 100%; /* Ancho completo */
+}
+
+.event-table th, .event-table td {
+    border: 1px solid #ddd; /* Borde de celda */
+    padding: 8px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto */
+}
+
+.event-table th {
+    background-color: #f2f2f2; /* Color de fondo para encabezados */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+}
+
+.social-icons {
+    margin-top: 10px; /* Margen superior */
+}
+
+.social-icons a {
+    color: #fff; /* Color del ícono */
+    margin: 0 5px; /* Margen entre íconos */
+    font-size: 20px; /* Tamaño del ícono */
+}
+#Temas-de-interes {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media-item {
+    width: 30%; /* Ancho del contenedor de medios */
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.media-item img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Ajusta automáticamente la altura según el ancho */
+}
+
+.media-item iframe {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    height: 200px; /* Establece la altura fija del video */
+    border: none;
+}
