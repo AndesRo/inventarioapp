@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organización para la Conservación del Medio Ambiente</title>
     <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS aquí -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <style>
         /* Estilos para encabezados y párrafos */
         h1, h2, h3, h4, h5, h6 {
@@ -39,6 +41,36 @@
             text-align: left; /* Alineación del texto en las celdas de encabezado */
         }
     </style>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color:green;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            padding: 10px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        /* Estilos específicos para dispositivos móviles */
+        @media only screen and (max-width: 600px) {
+            .media-container {
+                flex-direction: column;
+            }
+            .media-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -51,12 +83,17 @@
             <a href="#videos-relacionados">Videos Relacionados</a>
             <a href="https://es.wikipedia.org/wiki/Medio_ambiente" target="_blank">Wikipedia</a>
         </nav>
-        <audio id="podcast-audio" src="audio/audio mp3.mp3" preload="auto"></audio>
-        <button id="playpause-button" onclick="toggleAudio()">Reproducir Podcast</button>
+       
+        
     </header>
     
 
     <main>
+        <audio id="podcast-audio" src="audio/audio mp3.mp3" preload="auto"></audio>
+        <button id="playpause-button" onclick="toggleAudio()" style="background-color: #4CAF50; color: white; padding: 10px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border: none; border-radius: 4px; transition: background-color 0.3s ease;">
+            <i id="playpause-icon" class="fas fa-play"></i> Escucha nuestro podcast
+        </button>
+        
         <!-- Contenido principal de la página -->
         <section id="quienes-somos">
             <h2>Quiénes Somos</h2>

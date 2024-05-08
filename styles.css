@@ -58,7 +58,7 @@ p {
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #333; /* Color de fondo del pie de página */
+    background-color: green; /* Color de fondo del pie de página */
     color: #fff; /* Color del texto */
     padding: 20px; /* Espaciado interno */
     text-align: center; /* Alineación del texto */
@@ -103,3 +103,6 @@ footer {
     height: 200px; /* Establece la altura fija del video */
     border: none;
 }
+
+
+
