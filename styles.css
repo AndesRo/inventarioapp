@@ -153,3 +153,20 @@ footer {
         margin: 10px 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .media-container {
+        flex-direction: column; /* Cambia la dirección del contenedor a columna */
+    }
+
+    .media-item {
+        width: 100%; /* Ocupa todo el ancho del contenedor padre */
+    }
+
+    .media-item img,
+    .media-item iframe {
+        width: 100%; /* Ajusta la anchura de las imágenes y videos al 100% del contenedor */
+        height: auto; /* Ajusta automáticamente la altura según el ancho */
+    }
+}
+
