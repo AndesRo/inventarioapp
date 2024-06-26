@@ -29,5 +29,5 @@ def index():
                            inventario_actual=inventario_actual, 
                            cantidad_vendida=cantidad_vendida)
 
-if __name__ == "__main__":
+if __name__ == "__main__":  
     app.run(debug=True)
