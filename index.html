@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Inventario</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="icon" href="images/inventario-disponible.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <img src="images/inventario.png" alt="Logo de Chocolamú" class="logo">
+        <h1>Sistema de Control de Inventario</h1>
+        
+        <!-- Contenedor para la animación de escritura en la agenda -->
+        <div class="agenda-container">
+            <div id="agenda-text"></div>
+        </div>
+
+        <form id="inventory-form">
+            <label for="nombre_producto">Nombre del Producto:</label>
+            <input type="text" id="nombre_producto" name="nombre_producto" required>
+            
+            <label for="inventario_actual">Cantidad Actual en Inventario:</label>
+            <input type="number" id="inventario_actual" name="inventario_actual" required>
+            
+            <label for="cantidad_vendida">Cantidad Vendida en el Día:</label>
+            <input type="number" id="cantidad_vendida" name="cantidad_vendida" required>
+            
+            <button type="submit">Actualizar Inventario</button>
+        </form>
+        
+        <div class="loading" id="loading" style="display: none;">
+            <img src="images/loading-8871.gif" alt="Actualizando..." class="loading-gif">
+        </div>
+
+        <div class="error" id="error-message" style="display: none;">Mensaje de error aquí</div>
+        <div class="success" id="success-message" style="display: none;">
+            <p>Producto: <span id="nombre_producto_display"></span></p>
+            <p>La nueva cantidad en inventario es: <span id="inventario_nuevo"></span></p>
+            <p>Inventario actual: <span id="inventario_actual_display"></span></p>
+            <p>Cantidad vendida: <span id="cantidad_vendida_display"></span></p>
+        </div>
+    </div>
+
+    <!-- Referencia al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
