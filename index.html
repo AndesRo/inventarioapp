@@ -28,7 +28,15 @@
             <input type="number" id="cantidad_vendida" name="cantidad_vendida" required>
             
             <button type="submit">Actualizar Inventario</button>
-        </form>
+
+
+    <!-- Notificación -->
+    <div id="notification" class="notification" style="display: none;">
+        Producto actualizado exitosamente
+    </div>
+
+         </form>
+        
         
         <div class="loading" id="loading" style="display: none;">
             <img src="images/loading-8871.gif" alt="Actualizando..." class="loading-gif">
@@ -41,11 +49,6 @@
             <p>Inventario actual: <span id="inventario_actual_display"></span></p>
             <p>Cantidad vendida: <span id="cantidad_vendida_display"></span></p>
         </div>
-    </div>
-
-    <!-- Notificación -->
-    <div id="notification" class="notification" style="display: none;">
-        Producto actualizado exitosamente
     </div>
 
     <!-- Referencia al archivo JavaScript -->
