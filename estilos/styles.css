@@ -75,15 +75,11 @@ button:hover {
 }
 
 .notification {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #ffffd28a;
-    color: #3e3d3d;
+    background-color: #afbecd00;
+    color: #64518d;
     padding: 10px;
     border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    margin-top: 20px;
     display: none;
 }
 
