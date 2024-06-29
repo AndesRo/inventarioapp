@@ -2,6 +2,7 @@ document.getElementById('inventory-form').addEventListener('submit', function(ev
     event.preventDefault();
 
     let nombreProducto = document.getElementById('nombre_producto').value;
+    let precioProducto = parseFloat(document.getElementById('precio_producto').value);
     let inventarioActual = parseInt(document.getElementById('inventario_actual').value);
     let cantidadVendida = parseInt(document.getElementById('cantidad_vendida').value);
     let errorMessage = document.getElementById('error-message');
@@ -13,15 +14,15 @@ document.getElementById('inventory-form').addEventListener('submit', function(ev
     successMessage.style.display = 'none';
     loading.style.display = 'block';
 
-    if (isNaN(inventarioActual) || isNaN(cantidadVendida)) {
+    if (isNaN(inventarioActual) || isNaN(cantidadVendida) || isNaN(precioProducto)) {
         errorMessage.textContent = "Por favor, ingrese valores numéricos válidos.";
         errorMessage.style.display = 'block';
         loading.style.display = 'none';
         return;
     }
 
-    if (inventarioActual < 0 || cantidadVendida < 0) {
-        errorMessage.textContent = "Las cantidades no pueden ser negativas.";
+    if (inventarioActual < 0 || cantidadVendida < 0 || precioProducto < 0) {
+        errorMessage.textContent = "Las cantidades y el precio no pueden ser negativos.";
         errorMessage.style.display = 'block';
         loading.style.display = 'none';
         return;
@@ -38,6 +39,7 @@ document.getElementById('inventory-form').addEventListener('submit', function(ev
 
     setTimeout(function() { // Simula un tiempo de procesamiento
         document.getElementById('nombre_producto_display').textContent = nombreProducto;
+        document.getElementById('precio_producto_display').textContent = precioProducto.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
         document.getElementById('inventario_nuevo').textContent = inventarioNuevo;
         document.getElementById('inventario_actual_display').textContent = inventarioActual;
         document.getElementById('cantidad_vendida_display').textContent = cantidadVendida;
