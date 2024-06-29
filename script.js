@@ -7,6 +7,7 @@ document.getElementById('inventory-form').addEventListener('submit', function(ev
     let errorMessage = document.getElementById('error-message');
     let successMessage = document.getElementById('success-message');
     let loading = document.getElementById('loading');
+    let notification = document.getElementById('notification');
 
     errorMessage.style.display = 'none';
     successMessage.style.display = 'none';
@@ -43,5 +44,11 @@ document.getElementById('inventory-form').addEventListener('submit', function(ev
 
         loading.style.display = 'none';
         successMessage.style.display = 'block';
+
+        // Mostrar notificación
+        notification.style.display = 'block';
+        setTimeout(function() {
+            notification.style.display = 'none';
+        }, 3000); // 3 segundos de duración de la notificación
     }, 1000); // 1 segundo de tiempo de espera
 });

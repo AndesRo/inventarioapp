@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ddf8d8;
+    background-color: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background: #fbffe3;
+    background: #fcffec;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -71,8 +71,22 @@ button:hover {
 }
 
 .success {
-    color: #28a745;
+    color: #c79c28;
 }
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffd28a;
+    color: #3e3d3d;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+
 
 @media (min-width: 768px) {
     .container {
