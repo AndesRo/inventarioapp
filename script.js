@@ -41,7 +41,7 @@ document.getElementById('inventory-form').addEventListener('submit', function(ev
         document.getElementById('nombre_producto_display').textContent = nombreProducto;
         document.getElementById('precio_producto_display').textContent = precioProducto.toLocaleString('es-CL');
         document.getElementById('inventario_nuevo').textContent = inventarioNuevo;
-        document.getElementById('inventario_actual_display').textContent = inventarioActual;
+      
         document.getElementById('cantidad_vendida_display').textContent = cantidadVendida;
 
         loading.style.display = 'none';

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Control de Inventario</title>
+    <title>Control de Inventario de Chocolamú</title>
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="icon" href="images/inventario-disponible.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -30,7 +31,7 @@
             <label for="cantidad_vendida">Cantidad Vendida en el Día:</label>
             <input type="number" id="cantidad_vendida" name="cantidad_vendida" required>
             
-            <button type="submit">Actualizar Inventario</button>
+            <button type="submit">Guardar Inventario</button>
         </form>
         
         <div class="loading" id="loading" style="display: none;">
@@ -39,16 +40,15 @@
 
         <div class="error" id="error-message" style="display: none;">Mensaje de error aquí</div>
         <div class="success" id="success-message" style="display: none;">
-            <p>Producto: <span id="nombre_producto_display"></span></p>
-            <p>Precio: $<span id="precio_producto_display"></span> CLP</p>
-            <p>La nueva cantidad en inventario es: <span id="inventario_nuevo"></span></p>
-            <p>Inventario actual: <span id="inventario_actual_display"></span></p>
-            <p>Cantidad vendida: <span id="cantidad_vendida_display"></span></p>
+            <p>Producto: <span id="nombre_producto_display"></span> <i class="fas fa-check-circle"></i></p>
+            <p>Precio: $<span id="precio_producto_display"></span> CLP <i class="fas fa-check-circle"></i></p>
+            <p>Inventario Actualizado: <span id="inventario_nuevo"></span> <i class="fas fa-check-circle"></i></p>
+            <p>Cantidad vendida: <span id="cantidad_vendida_display"></span> <i class="fas fa-check-circle"></i></p>
         </div>
 
         <!-- Notificación -->
         <div id="notification" class="notification" style="display: none;">
-            Producto agregado exitosamente
+            ¡Producto agregado exitosamente!
         </div>
     </div>
 
