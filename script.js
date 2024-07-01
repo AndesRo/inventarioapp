@@ -2,7 +2,7 @@ document.getElementById('inventory-form').addEventListener('submit', function(ev
     event.preventDefault();
 
     let nombreProducto = document.getElementById('nombre_producto').value;
-    let precioProducto = parseFloat(document.getElementById('precio_producto').value);
+    let precioProducto = parseInt(document.getElementById('precio_producto').value);
     let inventarioActual = parseInt(document.getElementById('inventario_actual').value);
     let cantidadVendida = parseInt(document.getElementById('cantidad_vendida').value);
     let errorMessage = document.getElementById('error-message');
@@ -39,9 +39,9 @@ document.getElementById('inventory-form').addEventListener('submit', function(ev
 
     setTimeout(function() { // Simula un tiempo de procesamiento
         document.getElementById('nombre_producto_display').textContent = nombreProducto;
-        document.getElementById('precio_producto_display').textContent = precioProducto.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        document.getElementById('precio_producto_display').textContent = precioProducto.toLocaleString('es-CL');
         document.getElementById('inventario_nuevo').textContent = inventarioNuevo;
-      
+        document.getElementById('inventario_actual_display').textContent = inventarioActual;
         document.getElementById('cantidad_vendida_display').textContent = cantidadVendida;
 
         loading.style.display = 'none';

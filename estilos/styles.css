@@ -1,6 +1,7 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: #434341;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,13 +11,18 @@ body {
 }
 
 .container {
-    background: #ffe99091;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 90%;
     max-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra el contenido horizontalmente */
 }
 
 .logo {
@@ -71,22 +77,22 @@ button:hover {
 }
 
 .success {
-    color: #1d1b13;
+    color: #343634;
 }
 
 .notification {
-    background-color: #afbecd00;
-    color: #64518d;
+    background-color: #28a745;
+    color: #fff;
     padding: 10px;
     border-radius: 4px;
     margin-top: 20px;
     display: none;
 }
 
-
 @media (min-width: 768px) {
     .container {
         width: 400px;
+        height: auto;
     }
 
     .loading-gif {
