@@ -41,11 +41,14 @@ document.getElementById('inventory-form').addEventListener('submit', function(ev
         document.getElementById('nombre_producto_display').textContent = nombreProducto;
         document.getElementById('precio_producto_display').textContent = precioProducto.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
         document.getElementById('inventario_nuevo').textContent = inventarioNuevo;
-        document.getElementById('inventario_actual_display').textContent = inventarioActual;
+      
         document.getElementById('cantidad_vendida_display').textContent = cantidadVendida;
 
         loading.style.display = 'none';
         successMessage.style.display = 'block';
+
+        // Limpiar el formulario
+        document.getElementById('inventory-form').reset();
 
         // Mostrar notificación
         notification.style.display = 'block';

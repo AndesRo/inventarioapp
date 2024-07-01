@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background: #fcffec;
+    background: #ffe99091;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -71,7 +71,7 @@ button:hover {
 }
 
 .success {
-    color: #c79c28;
+    color: #1d1b13;
 }
 
 .notification {
